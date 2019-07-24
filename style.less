@@ -1,0 +1,69 @@
+@orange :#f8a400;
+
+
+.orange-text {
+    color: @orange;
+}
+
+.quiz {
+    background-color: @orange;
+}
+
+.lead {
+    position: relative;
+}
+
+.heartbeat {
+    position: absolute;
+    top: -20px;
+    right: 515px;
+    height: 110px;
+    width: 110px;
+    background-color: @orange;
+    border-radius: 50%;
+    display: inline-block;
+    -webkit-animation: ping 1s ease-in-out both;
+    -webkit-animation-iteration-count: infinite;
+    animation: ping 1s ease-in-out both;
+    animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+@keyframes ping {
+    0% {
+        -webkit-transform: scale(0.2);
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+
+    80% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: scale(2.2);
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
